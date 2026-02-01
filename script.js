@@ -18,7 +18,7 @@ let boxs = document.querySelectorAll(".square");
 
 for (let box of boxs) {
   box.addEventListener("mouseenter", defaultcolor);
-  // box.addEventListener("mouseleave", changecolor);
+  box.addEventListener("mouseleave", changecolor);
 }
 
 function defaultcolor(e) {
@@ -32,6 +32,8 @@ else{
 }
 }
 }
-function changecolor(e) {
-  // e.target.style.backgroundColor = "#6F4E3A";
+function changecolor() {
+	for(let box of boxs){
+  box.style.backgroundColor = "#E6E6FA";
+}
 }
